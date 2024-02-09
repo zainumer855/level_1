@@ -103,20 +103,38 @@ Image section
     background-position: bottom;
 }
 
+#image .img1{
+    background-image: url("https://assets-global.website-files.com/64589fb989b2b33c593db89d/6458a6db645ec6a527000cfa_home-hero-p-2000.webp");
+}
+#image .img2{
+    background-image: url("https://assets-global.website-files.com/64589fb989b2b3e8783db8c8/645cad0d8364135d4087b9c8_project-01-p-2000.webp");
+    background-position: center;
+}
+#image .img3{
+    background-image: url("https://assets-global.website-files.com/64589fb989b2b3e8783db8c8/645cad129d3885d86c115c7f_project-02-p-2000.webp");
+    background-position: center;
+}
+#image .img4{
+    background-image: url("https://assets-global.website-files.com/64589fb989b2b3e8783db8c8/645cad1988b7ca338942d0b3_project-03-p-2000.webp");
+    background-position: center;
+}
+
 /* ****************************
 About section
 ******************************* */
 #about{
     height: 80%;
     width: 100%;
-    padding: 50px;
+    padding: 65px;
     padding-top: 60px;
     display: flex;
+    border-bottom: 2px solid #1e1e21;
 }
 
 #about .about_part1{
-    width: 60%;
+    width: 65%;
     border-right: 2px solid #000;
+    padding-right: 50px;
 }
 
 #about .about_part1 h1{
@@ -127,7 +145,7 @@ About section
 }
 
 #about .about_part2{
-    width: 40%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -154,18 +172,16 @@ About section
 /* ****************************
 Work section
 ******************************* */
-#work{
+#layout{
     height: 90%;
     width: 100%;
     padding: 50px;
     padding-top: 60px;
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
 }
 
-#work .work_part1{
-    /* background-color: lightsalmon; */
+#layout .layout_part1{
     width: 40%;
     display: flex;
     justify-content: space-between;
@@ -173,16 +189,16 @@ Work section
     border-right: 2px solid #000;
 }
 
-#work .work_part1 h2{
+#layout .layout_part1 h2{
     font-size: 32px;
     font-weight: 500;
 }
 
-#work .work_part1 i{
+#layout .layout_part1 i{
     font-size: 42px;
 }
 
-#work .work_part2{
+#layout .layout_part2{
     width: 60%;
     padding-left: 60px;
     display: flex;
@@ -190,33 +206,91 @@ Work section
     justify-content: space-around;
 }
 
-#work .work_part2 hr{
-    /* height: 2px; */
+#layout .layout_part2 hr{
     border: 1.5px solid #000;
     background-color: #000;
 }
 
-#work .work_part2 .work_inner{
+#layout .layout_part2 .layout_inner{
     display: flex;
 }
 
-#work .work_part2 .work_inner .work_elements{
+#layout .layout_part2 .layout_inner .layout_elements{
     width: 50%;
     padding-right: 20px;
 }
 
-#work .work_part2 .work_inner .work_elements:nth-child(2){
+#layout .layout_part2 .layout_inner .layout_elements:nth-child(2){
     border-left: 2px solid #000;
     padding-left: 30px;
 }
 
-#work .work_part2 .work_inner .work_elements h3{
+#layout .layout_part2 .layout_inner .layout_elements h3{
     font-size: 44px;
     font-weight: 600;
     padding-bottom: 15px;
 }
 
-#work .work_part2 .work_inner .work_elements p{
+#layout .layout_part2 .layout_inner .layout_elements p{
     font-size: 18px;
     line-height: 23px;
+}
+
+/* ****************************
+CNR(Camera, Noise, Robot) section
+******************************* */
+#CNR{
+    height: 40%;
+    width: 100%;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cnr_part1{
+    width: 60%;
+    /* background-color: rgb(232, 47, 47); */
+}
+
+.cnr_part1 h1{
+    font-size: 144px;
+    font-weight: 600;
+}
+
+.cnr_part2{
+    /* background-color: lightcoral; */
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.cnr_part2 p{
+    font-size: 20px;
+}
+
+.cnr_part2 .year{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cnr_part2 h3{
+    font-size: 14px;
+    font-weight: 500;
+    color: #f5f3ef;
+    background-color: #1e1e21;
+    padding: 8px 10px;
+    border-radius: 50px;
+}
+
+.clients{
+    height: 100% !important;
+}
+
+#clients_part2{
+    justify-content: stretch !important;
+    gap: 40px;
+
 }
