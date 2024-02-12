@@ -194,7 +194,7 @@ About section
 Work section
 ******************************* */
 #work{
-    height: 90%;
+    /* height: 90%; */
     width: 100%;
     padding: 50px;
     padding-top: 60px;
@@ -224,7 +224,8 @@ Work section
     padding-left: 60px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    row-gap: 40px;
 }
 
 #work .work_part2 hr{
@@ -271,7 +272,6 @@ CNR(Camera, Noise, Robot) section
 
 .cnr_part1{
     width: 60%;
-    /* background-color: rgb(232, 47, 47); */
 }
 
 .cnr_part1 h1{
@@ -280,7 +280,6 @@ CNR(Camera, Noise, Robot) section
 }
 
 .cnr_part2{
-    /* background-color: lightcoral; */
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -305,16 +304,6 @@ CNR(Camera, Noise, Robot) section
     padding: 8px 10px;
     border-radius: 50px;
 }
-
-/* .clients{
-    height: 100% !important;
-}
-
-#clients_part2{
-    justify-content: stretch !important;
-    gap: 40px;
-
-} */
 
 /* ****************************
 Clients section
