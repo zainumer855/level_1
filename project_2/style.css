@@ -28,6 +28,19 @@ Main
     width: 100%;
 }
 
+.divider{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider hr{
+    height: 3.5px;
+    width: 95%;
+    background-color: #1e1e21;
+}
+
 /* ****************************
 Bent info section
 ******************************* */
@@ -128,7 +141,6 @@ About section
     padding: 65px;
     padding-top: 60px;
     display: flex;
-    border-bottom: 2px solid #1e1e21;
 }
 
 #about .about_part1{
@@ -172,7 +184,7 @@ About section
 /* ****************************
 Work section
 ******************************* */
-#layout{
+#work{
     height: 90%;
     width: 100%;
     padding: 50px;
@@ -181,7 +193,7 @@ Work section
     justify-content: center;
 }
 
-#layout .layout_part1{
+#work .work_part1{
     width: 40%;
     display: flex;
     justify-content: space-between;
@@ -189,16 +201,16 @@ Work section
     border-right: 2px solid #000;
 }
 
-#layout .layout_part1 h2{
+#work .work_part1 h2{
     font-size: 32px;
     font-weight: 500;
 }
 
-#layout .layout_part1 i{
+#work .work_part1 i{
     font-size: 42px;
 }
 
-#layout .layout_part2{
+#work .work_part2{
     width: 60%;
     padding-left: 60px;
     display: flex;
@@ -206,32 +218,32 @@ Work section
     justify-content: space-around;
 }
 
-#layout .layout_part2 hr{
+#work .work_part2 hr{
     border: 1.5px solid #000;
     background-color: #000;
 }
 
-#layout .layout_part2 .layout_inner{
+#work .work_part2 .work_inner{
     display: flex;
 }
 
-#layout .layout_part2 .layout_inner .layout_elements{
+#work .work_part2 .work_inner .work_elements{
     width: 50%;
     padding-right: 20px;
 }
 
-#layout .layout_part2 .layout_inner .layout_elements:nth-child(2){
+#work .work_part2 .work_inner .work_elements:nth-child(2){
     border-left: 2px solid #000;
     padding-left: 30px;
 }
 
-#layout .layout_part2 .layout_inner .layout_elements h3{
+#work .work_part2 .work_inner .work_elements h3{
     font-size: 44px;
     font-weight: 600;
     padding-bottom: 15px;
 }
 
-#layout .layout_part2 .layout_inner .layout_elements p{
+#work .work_part2 .work_inner .work_elements p{
     font-size: 18px;
     line-height: 23px;
 }
@@ -285,7 +297,7 @@ CNR(Camera, Noise, Robot) section
     border-radius: 50px;
 }
 
-.clients{
+/* .clients{
     height: 100% !important;
 }
 
@@ -293,4 +305,103 @@ CNR(Camera, Noise, Robot) section
     justify-content: stretch !important;
     gap: 40px;
 
+} */
+
+/* ****************************
+Clients section
+******************************* */
+#clients{
+    width: 100%;
+    padding: 50px;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+#clients .clients_part1{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+    border-right: 2px solid #000;
+}
+
+#clients .clients_part1 h2{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+#clients .clients_part1 i{
+    font-size: 42px;
+}
+
+#clients .clients_part2{
+    width: 60%;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 41px;
+}
+
+#clients .clients_part2 hr{
+    border: 1.5px solid #000;
+    background-color: #000;
+}
+
+#clients .clients_part2 .clients_inner{
+    display: flex;
+}
+
+#clients .clients_part2 .clients_inner .clients_elements{
+    width: 50%;
+    padding-right: 41px;
+}
+
+#clients .clients_part2 .clients_inner .clients_elements:nth-child(2){
+    border-left: 2px solid #000;
+    padding-left: 30px;
+}
+
+#clients .clients_part2 .clients_inner .clients_elements h3{
+    font-size: 44px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    line-height: 46px;
+}
+
+#clients .clients_part2 .clients_inner .clients_elements p{
+    font-size: 18px;
+    line-height: 26px;
+}
+
+#clients .clients_part2 .clients_inner .clients_elements .artist{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+#clients .clients_part2 .clients_inner .clients_elements .artist .artist_img{
+    height: 60px;
+    width: 60px;
+    background-color: #71e73e;
+    border-radius: 50px;
+}
+
+#clients .clients_part2 .clients_inner .clients_elements .artist .artist_img img{
+    width: 100%;
+    border-radius: 50px;
+}
+
+#clients .clients_part2 .clients_inner .clients_elements .artist h4{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+#clients .clients_part2 .clients_inner .clients_elements .artist h5{
+    font-size:   18px;
+    font-weight: 500;
+    color: rgba(30,30,33,.7);;
 }
