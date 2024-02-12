@@ -24,8 +24,9 @@ html, body{
 Main
 ******************************* */
 #main{
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
+    /* background-color: #e52626; */
 }
 
 .divider{
@@ -41,11 +42,19 @@ Main
     background-color: #1e1e21;
 }
 
+.bg{
+    background-color: #1E1E21;
+}
+
+.bg .white{
+    background-color: #F5F3EF;
+    height: 1.5px;
+}
+
 /* ****************************
 Bent info section
 ******************************* */
 #nav_menu{
-    /* background-color: rgb(219, 75, 18); */
     position: fixed;
     right: 45px;
     top: 35px;
@@ -53,10 +62,11 @@ Bent info section
 }
 
 #nav_menu button{
-    background-color: #000;
+    background-color: #1E1E21;
     color: #fff;
     padding: 15px 20px;
     font-size: 20px;
+    border: 0;
     border-radius: 50px;
     margin-right: 5px;
     font-weight: 600;
@@ -66,11 +76,9 @@ Bent info section
 Bent info section
 ******************************* */
 #bent_info{
-    height: 63%;
+    height: 65%;
     width: 100%;
-    padding-top: 66px;
-    padding-left: 63px;
-    padding-right: 63px;
+    padding: 60px;
 }
 
 #bent_info h1{
@@ -104,7 +112,8 @@ Bent info section
 Image section
 ******************************* */
 #image{
-    height: 90%;
+    background-color: #6eee43;
+    height: 640px;
     width: 100%;
 }
 
@@ -404,4 +413,58 @@ Clients section
     font-size:   18px;
     font-weight: 500;
     color: rgba(30,30,33,.7);;
+}
+
+/* ****************************
+Connect section
+******************************* */
+#connect{
+    height: 80%;
+    width: 100%;
+    background-color: #1E1E21;
+    color: #F5F3EF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+
+#connect h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+#connect h2{
+    font-size: 144px;
+    font-weight: 600;
+    letter-spacing: -6px;
+    margin-bottom: 20px;
+}
+
+#connect button{
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* ****************************
+Footer
+******************************* */
+#footer{
+    height: 15%;
+    width: 100%;
+    padding: 30px;
+    background-color: #1E1E21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer h3{
+    font-size: 18px;
+    color: #F5F3EF;
+    font-weight: 500;
 }
